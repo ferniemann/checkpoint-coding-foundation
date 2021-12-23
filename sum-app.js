@@ -1,8 +1,6 @@
 class SumApp {
-  numbers = []
-  sum = 0
-  constructor(n) {
-    this.number = n
+  constructor() {
+    this.numbers = []
   }
 
   addNumber(n) {
@@ -10,8 +8,9 @@ class SumApp {
   }
 
   getSum() {
-    this.numbers.forEach(num => this.sum += num)
-    return this.sum
+    let sum = 0
+    this.numbers.forEach(num => sum += num)
+    return sum
   }
 
   reset() {
