@@ -7,6 +7,6 @@ function zipStrings(strA, strB) {
   for (let i = 0; i < length; i++) {
     arrMerged.push(arrA[i], arrB[i])
   }
-  console.log(arrMerged)
+  
   return arrMerged.join("")
 }
